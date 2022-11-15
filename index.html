@@ -1,0 +1,46 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+        <script src="https://randojs.com/1.0.0.js"></script>
+        <script src="scripts/roll.js"></script>
+		<script src="scripts/score.js"></script>
+		<script src="scripts/clickhover.js"></script>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+	<table>
+  		<tr>
+   		 	<td><img src='http://placehold.it/120x60' id="myNumberA" onclick="lock(0)"></td>
+    		<td><img src='http://placehold.it/120x60' id="myNumberB" onclick="lock(1)"></td> 
+    		<td><img src='http://placehold.it/120x60' id="myNumberC" onclick="lock(2)"></td>
+   		 	<td><img src='http://placehold.it/120x60' id="myNumberD" onclick="lock(3)"></td>
+    		<td><img src='http://placehold.it/120x60' id="myNumberE" onclick="lock(4)"></td> 
+  		</tr>
+		<tr>
+   		 	<td id="lockA">&#128275;</td>
+    		<td id="lockB">&#128275;</td> 
+    		<td id="lockC">&#128275;</td>
+   		 	<td id="lockD">&#128275;</td>
+    		<td id="lockE">&#128275;</td> 
+		</tr>
+	</table>
+	<button id="shakeButton" onclick="showRandomNumber()">Roll: 3</button>
+	<table>
+  		<tr>
+   		 	<td id="jumbCell" background="Backgrounds/Back1.png" style="height:100px;width:450px" onClick="jumbClick()" onmouseover="jumbHover()" onmouseout="hide()">&nbsp;</td>
+    		<td id="moonCell" background="Backgrounds/Back2.png" style="height:100px;width:450px" onClick="moonClick()" onmouseover="moonHover()" onmouseout="hide()">&nbsp;</td> 
+    		<td id="fiveCell" background="Backgrounds/Back3.png" style="height:100px;width:450px" onClick="fiveClick()" onmouseover="fiveHover()" onmouseout="hide()">&nbsp;</td>
+  		</tr>
+  		<tr>
+   		 	<td id="sugarCell" background="Backgrounds/Back4.png" style="height:100px;width:450px" onClick="sugarClick()" onmouseover="sugarHover()" onmouseout="hide()">&nbsp;</td>
+    		<td id="threeCell" background="Backgrounds/Back5.png" style="height:100px;width:450px" onClick="threeClick()" onmouseover="threeHover()" onmouseout="hide()">&nbsp;</td> 
+    		<td id="mixedCell" background="Backgrounds/Back6.png" style="height:100px;width:450px" onClick="mixedClick()" onmouseover="mixedHover()" onmouseout="hide()">&nbsp;</td>
+  		</tr>
+  		<tr>
+   		 	<td id="pickleCell" background="Backgrounds/Back7.png" style="height:100px;width:450px" onClick="pickleClick()" onmouseover="pickleHover()" onmouseout="hide()">&nbsp;</td>
+    		<td id="fourCell" background="Backgrounds/Back8.png" style="height:100px;width:450px" onClick="fourClick()" onmouseover="fourHover()" onmouseout="hide()">&nbsp;</td> 
+    		<td id="freeCell" background="Backgrounds/Back9.png" style="height:100px;width:450px" onclick="freeClick()" onmouseover="freeHover()" onmouseout="hide()">&nbsp;</td>
+  		</tr>
+	</table>
+    </body>
+</html>
